@@ -10,6 +10,10 @@
     --fonte: 'Karla', sans-serif;
 }
 
+* {
+    margin: 0;
+}
+
 body {
     background-color: var(--cor3);
     font-family: var(--fonte);
@@ -60,7 +64,7 @@ h2 {
 h3 {
     font-size: 18px;
     color: var(--cor2);
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #container1 > p {
@@ -68,6 +72,7 @@ h3 {
     line-height: 28px;
     color: var(--cor4);
     padding-right: 30px;
+    padding-top: 20px;
 }
 
 p {
@@ -83,12 +88,13 @@ p {
 #mes {
     color: var(--cor3);
     position: relative;
-    bottom: 10px;
+    bottom: 5px;
     left: 8px;
 }
 
 #descricao {
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #container2  a {
@@ -102,12 +108,17 @@ p {
 
 #container2 h2 {
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #container2 > a > p {
     text-align: center;
     padding-top: 15px;
     color: white;
+}
+
+#container3 > h2 {
+    padding-bottom: 20px;
 }
 
 ul {
@@ -124,4 +135,34 @@ li a {
     text-decoration: none;
     color: var(--cor3);
     margin-right: px;
+}
+
+@media (min-width: 1440px) {
+
+    main {
+    padding-top: 100px;
+    }
+
+    #containerms {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #container1 {
+        width: 630px;
+        height: 220px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    #container2, #container3 {
+        width: 300px;       
+    }
+
+    #container2 {
+        border-radius: 0px 0px 0px 10px; 
+    }
+
+    #container3 {
+        border-radius: 0px 0px 10px 0px;
+    }
 }
